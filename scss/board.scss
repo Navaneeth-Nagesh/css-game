@@ -1,0 +1,48 @@
+.game-area {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    width: 80vw;
+    height: 70vh;
+    margin: 0 auto;
+    grid-gap: 20px;
+    li {
+        background: linear-gradient(to top, red, blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+//.shield {
+//    width: 100%;
+//    height: 60%;
+//    background: navy;
+//    display: block;
+//    z-index: 4;
+//    position: absolute;
+//    bottom: 0;
+//    left: 0;
+//}
+.character,
+.click-area {
+    animation: move 0.5s infinite alternate forwards;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+}
+
+@for $i from 1 through 9 {
+    $speed: random()*0.5 + 's';
+    li:nth-child(#{$i}) {
+        .character,
+        .click-area {
+            animation-duration: #{$speed};
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.game-area {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+  width: 80vw;
+  height: 70vh;
+  margin: 0 auto;
+  grid-gap: 20px; }
+  .game-area li {
+    background: linear-gradient(to top, red, blue);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.character,
+.click-area {
+  animation: move 0.5s infinite alternate forwards; }
+
+@keyframes move {
+  0% {
+    transform: translateY(-25px); }
+  50% {
+    transform: translateY(25px); } }
+li:nth-child(1) .character,
+li:nth-child(1) .click-area {
+  animation-duration: 0.3227758032s; }
+
+li:nth-child(2) .character,
+li:nth-child(2) .click-area {
+  animation-duration: 0.4828840444s; }
+
+li:nth-child(3) .character,
+li:nth-child(3) .click-area {
+  animation-duration: 0.1501506616s; }
+
+li:nth-child(4) .character,
+li:nth-child(4) .click-area {
+  animation-duration: 0.3724447225s; }
+
+li:nth-child(5) .character,
+li:nth-child(5) .click-area {
+  animation-duration: 0.1153449777s; }
+
+li:nth-child(6) .character,
+li:nth-child(6) .click-area {
+  animation-duration: 0.4606958581s; }
+
+li:nth-child(7) .character,
+li:nth-child(7) .click-area {
+  animation-duration: 0.1775437848s; }
+
+li:nth-child(8) .character,
+li:nth-child(8) .click-area {
+  animation-duration: 0.0944125573s; }
+
+li:nth-child(9) .character,
+li:nth-child(9) .click-area {
+  animation-duration: 0.0145484589s; }
+
+/*# sourceMappingURL=board.css.map */
